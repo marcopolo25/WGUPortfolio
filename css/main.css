@@ -13,7 +13,16 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
-
+.row {
+    float:left;
+    text-align: center;
+}
+.container {
+    display: inline-block;
+    width: 980px;
+    text-align: left;
+}
+table td {vertical-align: top;}
 /* ==========================================================================
    Template styles
    ========================================================================== */
@@ -31,6 +40,10 @@ header {
     left: 0;
     width: 100%;
     background: #000000;
+    z-index: 2;
+}
+header .container{
+    margin-left: -15px;
 }
 /*================= LOGO ==================== */
 .logo {
@@ -83,16 +96,15 @@ header .top-nav a:hover{
     background-size: cover;
 
 }
-/*================= JUMBOTRON ==================== */
-.row {
-    float:left;
-    text-align: center;
+#jumbotron h1{;
+    font-family: arial;
+    font-size: 3em;
+    color: #ffffff;
+    position: relative;
+    top: 25%;
+    left: 10%;
 }
-.container {
-    display: inline-block;
-    width: 980px;
-    text-align: left;
-}
+/*================= CONTENT LAYOUT ==================== */
 aside {
     float:left;
     width: 25%;
@@ -116,9 +128,36 @@ section {
     margin: 0;
     border-bottom: 1px solid #ccc;
 }
-.aside-nav {
-
+.quick-links p{
+    font-size: .8em;
+    padding: 0 20px;
 }
+.quick-links blockquote{
+    font-size: .8em;
+}
+.aside-nav{
+    color: #666;
+    font-size: 0.9em;
+}
+.aside-nav li{
+    margin-bottom:15px;
+}
+.aside-nav li a{
+    color: #666;
+}
+
+/*================= SECTION LAYOUT ==================== */
+article {
+    display: block;
+    margin: 0;
+    margin-bottom: 30px;
+}
+article h2, article h3{
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
 footer {
     clear: both;
     width: 100%;
